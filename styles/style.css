@@ -1,0 +1,173 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* -------------
+   Utilities
+--------------- */
+:root{
+    --primary-color: rgba(199, 21, 80, 0.864);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.btn-primary{
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 40px 10px 20px;
+}
+
+/* ----------
+    header 
+------------- */
+
+/* navigation */
+
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 115px;
+}
+.nav-title{
+    font-size: 25px;
+    font-weight: 700;
+}
+.nav-items{
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+.nav-item{
+    font-weight: 600;
+}
+.nav-item i{
+    font-size: 25px;
+}
+.nav-items li{
+    list-style: none;
+}
+
+
+/* .navigation{
+    display: none;
+} */
+/* responsiveness */
+@media screen and (max-width:688px) {
+    
+}
+/* banner */
+
+.banner{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin: 80px 200px 90px 200px;
+}
+.banner-texts{
+    padding-right: 50px;
+}
+.banner-title{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.banner-description{
+    margin-bottom: 20px;
+}
+.banner-img img{
+    background-image: url(../images/Circle\ design.svg);
+}
+
+/* responsiveness */
+
+@media screen and (max-width:688px) {
+    .banner{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .banner-title{
+        font-size: 25px;
+    }
+}
+
+/* ecom */
+
+.ecommerce{
+    display: grid;
+    grid-template-columns: repeat(7, 140px);
+    align-items: center;
+    justify-content: center;
+    padding: 35px 0;
+}
+hr{
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient( to right, rgba(0,0,0,0), rgba(9, 20, 27, 0.1),rgba(0,0,0,0));
+}
+/* .ecommerce{
+    display: none;
+} */
+
+/*----------
+     main
+------------- */
+
+/* popular collection styles */
+
+.collections{
+    margin: 130px 200px 0 200px;
+}
+.section-title{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+.item{
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.items img{
+    margin-bottom: 15px;
+}
+.item-title{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.item .price{
+    font-size: 25px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.item small{
+    color: goldenrod;
+}
+.item span{
+    color: black;
+    padding-left: 10px;
+}
+.see-more{
+    text-align: right;
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 60px;
+}
+/* 
+.collections{
+    display: none;
+} */
